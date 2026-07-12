@@ -16,4 +16,3 @@ test('invalid token is rejected', () => {
   assert.equal(verifyJwt('not-a-valid-token'), null);
 });
 
-a

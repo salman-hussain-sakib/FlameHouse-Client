@@ -1,0 +1,1328 @@
+import { MenuItem } from "./types";
+
+export const INITIAL_MENU: MenuItem[] = [
+  {
+    "id": "burgers-1",
+    "name": "FlameHouse Signature Burger",
+    "category": "Burgers",
+    "price": 11.79,
+    "description": "FlameHouse Signature Burger made with bold flamehouse flavor, crafted for lovers of burgers.",
+    "longDescription": "FlameHouse Signature Burger is cooked to order and served hot with fresh ingredients, creating a unique experience from our kitchen to your table.",
+    "rating": 4.6,
+    "images": [
+      "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=600&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1550547660-d9450f859349?w=600&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=600&auto=format&fit=crop&q=80"
+    ],
+    "spicyLevel": 0,
+    "isVeg": false,
+    "isFeatured": true,
+    "calories": 715,
+    "ingredients": [
+      "Beef Patty",
+      "Brioche Bun",
+      "Lettuce",
+      "Tomato",
+      "Smoky Sauce"
+    ]
+  },
+  {
+    "id": "burgers-2",
+    "name": "Volcano Spicy Burger",
+    "category": "Burgers",
+    "price": 12.59,
+    "description": "Volcano Spicy Burger made with bold flamehouse flavor, crafted for lovers of burgers.",
+    "longDescription": "Volcano Spicy Burger is cooked to order and served hot with fresh ingredients, creating a unique experience from our kitchen to your table.",
+    "rating": 4.7,
+    "images": [
+      "https://images.unsplash.com/photo-1550547660-d9450f859349?w=600&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=600&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1573080496219-bb080dd4f877?w=600&auto=format&fit=crop&q=80"
+    ],
+    "spicyLevel": 3,
+    "isVeg": false,
+    "isFeatured": true,
+    "calories": 730,
+    "ingredients": [
+      "Beef Patty",
+      "Brioche Bun",
+      "Lettuce",
+      "Tomato",
+      "Smoky Sauce"
+    ]
+  },
+  {
+    "id": "burgers-3",
+    "name": "Crispy Chicken Smash Burger",
+    "category": "Burgers",
+    "price": 13.39,
+    "description": "Crispy Chicken Smash Burger made with bold flamehouse flavor, crafted for lovers of burgers.",
+    "longDescription": "Crispy Chicken Smash Burger is cooked to order and served hot with fresh ingredients, creating a unique experience from our kitchen to your table.",
+    "rating": 4.8,
+    "images": [
+      "https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=600&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1573080496219-bb080dd4f877?w=600&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?w=600&auto=format&fit=crop&q=80"
+    ],
+    "spicyLevel": 0,
+    "isVeg": false,
+    "isFeatured": true,
+    "calories": 745,
+    "ingredients": [
+      "Beef Patty",
+      "Brioche Bun",
+      "Lettuce",
+      "Tomato",
+      "Smoky Sauce"
+    ]
+  },
+  {
+    "id": "burgers-4",
+    "name": "Smokehouse BBQ Burger",
+    "category": "Burgers",
+    "price": 14.19,
+    "description": "Smokehouse BBQ Burger made with bold flamehouse flavor, crafted for lovers of burgers.",
+    "longDescription": "Smokehouse BBQ Burger is cooked to order and served hot with fresh ingredients, creating a unique experience from our kitchen to your table.",
+    "rating": 4.9,
+    "images": [
+      "https://images.unsplash.com/photo-1573080496219-bb080dd4f877?w=600&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?w=600&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1525755662778-989d0524087e?w=600&auto=format&fit=crop&q=80"
+    ],
+    "spicyLevel": 2,
+    "isVeg": false,
+    "isFeatured": true,
+    "calories": 760,
+    "ingredients": [
+      "Beef Patty",
+      "Brioche Bun",
+      "Lettuce",
+      "Tomato",
+      "Smoky Sauce"
+    ]
+  },
+  {
+    "id": "burgers-5",
+    "name": "Fiesta Nacho Burger",
+    "category": "Burgers",
+    "price": 14.99,
+    "description": "Fiesta Nacho Burger made with bold flamehouse flavor, crafted for lovers of burgers.",
+    "longDescription": "Fiesta Nacho Burger is cooked to order and served hot with fresh ingredients, creating a unique experience from our kitchen to your table.",
+    "rating": 4.5,
+    "images": [
+      "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?w=600&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1525755662778-989d0524087e?w=600&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=600&auto=format&fit=crop&q=80"
+    ],
+    "spicyLevel": 0,
+    "isVeg": false,
+    "isFeatured": false,
+    "calories": 775,
+    "ingredients": [
+      "Beef Patty",
+      "Brioche Bun",
+      "Lettuce",
+      "Tomato",
+      "Smoky Sauce"
+    ]
+  },
+  {
+    "id": "burgers-6",
+    "name": "Mushroom Swiss Burger",
+    "category": "Burgers",
+    "price": 15.79,
+    "description": "Mushroom Swiss Burger made with bold flamehouse flavor, crafted for lovers of burgers.",
+    "longDescription": "Mushroom Swiss Burger is cooked to order and served hot with fresh ingredients, creating a unique experience from our kitchen to your table.",
+    "rating": 4.6,
+    "images": [
+      "https://images.unsplash.com/photo-1525755662778-989d0524087e?w=600&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=600&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1550547660-d9450f859349?w=600&auto=format&fit=crop&q=80"
+    ],
+    "spicyLevel": 0,
+    "isVeg": false,
+    "isFeatured": false,
+    "calories": 790,
+    "ingredients": [
+      "Beef Patty",
+      "Brioche Bun",
+      "Lettuce",
+      "Tomato",
+      "Smoky Sauce"
+    ]
+  },
+  {
+    "id": "burgers-7",
+    "name": "Veggie Fire Melt Burger",
+    "category": "Burgers",
+    "price": 16.59,
+    "description": "Veggie Fire Melt Burger made with bold flamehouse flavor, crafted for lovers of burgers.",
+    "longDescription": "Veggie Fire Melt Burger is cooked to order and served hot with fresh ingredients, creating a unique experience from our kitchen to your table.",
+    "rating": 4.7,
+    "images": [
+      "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=600&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1550547660-d9450f859349?w=600&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=600&auto=format&fit=crop&q=80"
+    ],
+    "spicyLevel": 3,
+    "isVeg": true,
+    "isFeatured": false,
+    "calories": 805,
+    "ingredients": [
+      "Beef Patty",
+      "Brioche Bun",
+      "Lettuce",
+      "Tomato",
+      "Smoky Sauce"
+    ]
+  },
+  {
+    "id": "burgers-8",
+    "name": "Double Heat Burger",
+    "category": "Burgers",
+    "price": 17.39,
+    "description": "Double Heat Burger made with bold flamehouse flavor, crafted for lovers of burgers.",
+    "longDescription": "Double Heat Burger is cooked to order and served hot with fresh ingredients, creating a unique experience from our kitchen to your table.",
+    "rating": 4.8,
+    "images": [
+      "https://images.unsplash.com/photo-1550547660-d9450f859349?w=600&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=600&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1573080496219-bb080dd4f877?w=600&auto=format&fit=crop&q=80"
+    ],
+    "spicyLevel": 0,
+    "isVeg": false,
+    "isFeatured": false,
+    "calories": 820,
+    "ingredients": [
+      "Beef Patty",
+      "Brioche Bun",
+      "Lettuce",
+      "Tomato",
+      "Smoky Sauce"
+    ]
+  },
+  {
+    "id": "burgers-9",
+    "name": "Avocado Crisp Burger",
+    "category": "Burgers",
+    "price": 18.19,
+    "description": "Avocado Crisp Burger made with bold flamehouse flavor, crafted for lovers of burgers.",
+    "longDescription": "Avocado Crisp Burger is cooked to order and served hot with fresh ingredients, creating a unique experience from our kitchen to your table.",
+    "rating": 4.9,
+    "images": [
+      "https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=600&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1573080496219-bb080dd4f877?w=600&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?w=600&auto=format&fit=crop&q=80"
+    ],
+    "spicyLevel": 0,
+    "isVeg": false,
+    "isFeatured": false,
+    "calories": 835,
+    "ingredients": [
+      "Beef Patty",
+      "Brioche Bun",
+      "Lettuce",
+      "Tomato",
+      "Smoky Sauce"
+    ]
+  },
+  {
+    "id": "burgers-10",
+    "name": "Classic Bacon Burger",
+    "category": "Burgers",
+    "price": 18.99,
+    "description": "Classic Bacon Burger made with bold flamehouse flavor, crafted for lovers of burgers.",
+    "longDescription": "Classic Bacon Burger is cooked to order and served hot with fresh ingredients, creating a unique experience from our kitchen to your table.",
+    "rating": 4.5,
+    "images": [
+      "https://images.unsplash.com/photo-1573080496219-bb080dd4f877?w=600&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?w=600&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1525755662778-989d0524087e?w=600&auto=format&fit=crop&q=80"
+    ],
+    "spicyLevel": 0,
+    "isVeg": false,
+    "isFeatured": false,
+    "calories": 850,
+    "ingredients": [
+      "Beef Patty",
+      "Brioche Bun",
+      "Lettuce",
+      "Tomato",
+      "Smoky Sauce"
+    ]
+  },
+  {
+    "id": "burgers-11",
+    "name": "Habanero Ranch Burger",
+    "category": "Burgers",
+    "price": 19.79,
+    "description": "Habanero Ranch Burger made with bold flamehouse flavor, crafted for lovers of burgers.",
+    "longDescription": "Habanero Ranch Burger is cooked to order and served hot with fresh ingredients, creating a unique experience from our kitchen to your table.",
+    "rating": 4.6,
+    "images": [
+      "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?w=600&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1525755662778-989d0524087e?w=600&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=600&auto=format&fit=crop&q=80"
+    ],
+    "spicyLevel": 3,
+    "isVeg": false,
+    "isFeatured": false,
+    "calories": 865,
+    "ingredients": [
+      "Beef Patty",
+      "Brioche Bun",
+      "Lettuce",
+      "Tomato",
+      "Smoky Sauce"
+    ]
+  },
+  {
+    "id": "burgers-12",
+    "name": "Truffle Melt Burger",
+    "category": "Burgers",
+    "price": 20.59,
+    "description": "Truffle Melt Burger made with bold flamehouse flavor, crafted for lovers of burgers.",
+    "longDescription": "Truffle Melt Burger is cooked to order and served hot with fresh ingredients, creating a unique experience from our kitchen to your table.",
+    "rating": 4.7,
+    "images": [
+      "https://images.unsplash.com/photo-1525755662778-989d0524087e?w=600&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=600&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1550547660-d9450f859349?w=600&auto=format&fit=crop&q=80"
+    ],
+    "spicyLevel": 0,
+    "isVeg": false,
+    "isFeatured": false,
+    "calories": 880,
+    "ingredients": [
+      "Beef Patty",
+      "Brioche Bun",
+      "Lettuce",
+      "Tomato",
+      "Smoky Sauce"
+    ]
+  },
+  {
+    "id": "pizza-1",
+    "name": "Firehouse Pepperoni Pizza",
+    "category": "Pizza",
+    "price": 16.79,
+    "description": "Firehouse Pepperoni Pizza made with bold flamehouse flavor, crafted for lovers of pizza.",
+    "longDescription": "Firehouse Pepperoni Pizza is cooked to order and served hot with fresh ingredients, creating a unique experience from our kitchen to your table.",
+    "rating": 4.6,
+    "images": [
+      "https://images.unsplash.com/photo-1513104890138-7c749659a591?w=600&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=600&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1606755456206-b25206cde27e?w=600&auto=format&fit=crop&q=80"
+    ],
+    "spicyLevel": 3,
+    "isVeg": false,
+    "isFeatured": true,
+    "calories": 910,
+    "ingredients": [
+      "Pizza Dough",
+      "Tomato Sauce",
+      "Mozzarella",
+      "Herb Blend"
+    ]
+  },
+  {
+    "id": "pizza-2",
+    "name": "Garden Veggie Feast Pizza",
+    "category": "Pizza",
+    "price": 17.59,
+    "description": "Garden Veggie Feast Pizza made with bold flamehouse flavor, crafted for lovers of pizza.",
+    "longDescription": "Garden Veggie Feast Pizza is cooked to order and served hot with fresh ingredients, creating a unique experience from our kitchen to your table.",
+    "rating": 4.7,
+    "images": [
+      "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=600&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1606755456206-b25206cde27e?w=600&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1598679253544-2c97992403ea?w=600&auto=format&fit=crop&q=80"
+    ],
+    "spicyLevel": 0,
+    "isVeg": true,
+    "isFeatured": true,
+    "calories": 920,
+    "ingredients": [
+      "Pizza Dough",
+      "Tomato Sauce",
+      "Mozzarella",
+      "Herb Blend"
+    ]
+  },
+  {
+    "id": "pizza-3",
+    "name": "BBQ Meat Feast Pizza",
+    "category": "Pizza",
+    "price": 18.39,
+    "description": "BBQ Meat Feast Pizza made with bold flamehouse flavor, crafted for lovers of pizza.",
+    "longDescription": "BBQ Meat Feast Pizza is cooked to order and served hot with fresh ingredients, creating a unique experience from our kitchen to your table.",
+    "rating": 4.8,
+    "images": [
+      "https://images.unsplash.com/photo-1606755456206-b25206cde27e?w=600&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1598679253544-2c97992403ea?w=600&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1541592106381-b31e9677c0e5?w=600&auto=format&fit=crop&q=80"
+    ],
+    "spicyLevel": 2,
+    "isVeg": false,
+    "isFeatured": true,
+    "calories": 930,
+    "ingredients": [
+      "Pizza Dough",
+      "Tomato Sauce",
+      "Mozzarella",
+      "Herb Blend"
+    ]
+  },
+  {
+    "id": "pizza-4",
+    "name": "Spicy Sausage Inferno",
+    "category": "Pizza",
+    "price": 19.19,
+    "description": "Spicy Sausage Inferno made with bold flamehouse flavor, crafted for lovers of pizza.",
+    "longDescription": "Spicy Sausage Inferno is cooked to order and served hot with fresh ingredients, creating a unique experience from our kitchen to your table.",
+    "rating": 4.9,
+    "images": [
+      "https://images.unsplash.com/photo-1598679253544-2c97992403ea?w=600&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1541592106381-b31e9677c0e5?w=600&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1513104890138-7c749659a591?w=600&auto=format&fit=crop&q=80"
+    ],
+    "spicyLevel": 3,
+    "isVeg": false,
+    "isFeatured": true,
+    "calories": 940,
+    "ingredients": [
+      "Pizza Dough",
+      "Tomato Sauce",
+      "Mozzarella",
+      "Herb Blend"
+    ]
+  },
+  {
+    "id": "pizza-5",
+    "name": "Mediterranean Flame Pizza",
+    "category": "Pizza",
+    "price": 19.99,
+    "description": "Mediterranean Flame Pizza made with bold flamehouse flavor, crafted for lovers of pizza.",
+    "longDescription": "Mediterranean Flame Pizza is cooked to order and served hot with fresh ingredients, creating a unique experience from our kitchen to your table.",
+    "rating": 4.5,
+    "images": [
+      "https://images.unsplash.com/photo-1541592106381-b31e9677c0e5?w=600&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1513104890138-7c749659a591?w=600&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=600&auto=format&fit=crop&q=80"
+    ],
+    "spicyLevel": 0,
+    "isVeg": true,
+    "isFeatured": false,
+    "calories": 950,
+    "ingredients": [
+      "Pizza Dough",
+      "Tomato Sauce",
+      "Mozzarella",
+      "Herb Blend"
+    ]
+  },
+  {
+    "id": "pizza-6",
+    "name": "Four Cheese Lava Pizza",
+    "category": "Pizza",
+    "price": 20.79,
+    "description": "Four Cheese Lava Pizza made with bold flamehouse flavor, crafted for lovers of pizza.",
+    "longDescription": "Four Cheese Lava Pizza is cooked to order and served hot with fresh ingredients, creating a unique experience from our kitchen to your table.",
+    "rating": 4.6,
+    "images": [
+      "https://images.unsplash.com/photo-1513104890138-7c749659a591?w=600&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=600&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1606755456206-b25206cde27e?w=600&auto=format&fit=crop&q=80"
+    ],
+    "spicyLevel": 0,
+    "isVeg": true,
+    "isFeatured": false,
+    "calories": 960,
+    "ingredients": [
+      "Pizza Dough",
+      "Tomato Sauce",
+      "Mozzarella",
+      "Herb Blend"
+    ]
+  },
+  {
+    "id": "pizza-7",
+    "name": "Buffalo Chicken Pizza",
+    "category": "Pizza",
+    "price": 21.59,
+    "description": "Buffalo Chicken Pizza made with bold flamehouse flavor, crafted for lovers of pizza.",
+    "longDescription": "Buffalo Chicken Pizza is cooked to order and served hot with fresh ingredients, creating a unique experience from our kitchen to your table.",
+    "rating": 4.7,
+    "images": [
+      "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=600&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1606755456206-b25206cde27e?w=600&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1598679253544-2c97992403ea?w=600&auto=format&fit=crop&q=80"
+    ],
+    "spicyLevel": 1,
+    "isVeg": false,
+    "isFeatured": false,
+    "calories": 970,
+    "ingredients": [
+      "Pizza Dough",
+      "Tomato Sauce",
+      "Mozzarella",
+      "Herb Blend"
+    ]
+  },
+  {
+    "id": "pizza-8",
+    "name": "Hawaiian Heat Pizza",
+    "category": "Pizza",
+    "price": 22.39,
+    "description": "Hawaiian Heat Pizza made with bold flamehouse flavor, crafted for lovers of pizza.",
+    "longDescription": "Hawaiian Heat Pizza is cooked to order and served hot with fresh ingredients, creating a unique experience from our kitchen to your table.",
+    "rating": 4.8,
+    "images": [
+      "https://images.unsplash.com/photo-1606755456206-b25206cde27e?w=600&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1598679253544-2c97992403ea?w=600&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1541592106381-b31e9677c0e5?w=600&auto=format&fit=crop&q=80"
+    ],
+    "spicyLevel": 0,
+    "isVeg": false,
+    "isFeatured": false,
+    "calories": 980,
+    "ingredients": [
+      "Pizza Dough",
+      "Tomato Sauce",
+      "Mozzarella",
+      "Herb Blend"
+    ]
+  },
+  {
+    "id": "pizza-9",
+    "name": "Truffle Mushroom Pizza",
+    "category": "Pizza",
+    "price": 23.19,
+    "description": "Truffle Mushroom Pizza made with bold flamehouse flavor, crafted for lovers of pizza.",
+    "longDescription": "Truffle Mushroom Pizza is cooked to order and served hot with fresh ingredients, creating a unique experience from our kitchen to your table.",
+    "rating": 4.9,
+    "images": [
+      "https://images.unsplash.com/photo-1598679253544-2c97992403ea?w=600&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1541592106381-b31e9677c0e5?w=600&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1513104890138-7c749659a591?w=600&auto=format&fit=crop&q=80"
+    ],
+    "spicyLevel": 0,
+    "isVeg": false,
+    "isFeatured": false,
+    "calories": 990,
+    "ingredients": [
+      "Pizza Dough",
+      "Tomato Sauce",
+      "Mozzarella",
+      "Herb Blend"
+    ]
+  },
+  {
+    "id": "pizza-10",
+    "name": "Peri-Peri Chicken Pizza",
+    "category": "Pizza",
+    "price": 23.99,
+    "description": "Peri-Peri Chicken Pizza made with bold flamehouse flavor, crafted for lovers of pizza.",
+    "longDescription": "Peri-Peri Chicken Pizza is cooked to order and served hot with fresh ingredients, creating a unique experience from our kitchen to your table.",
+    "rating": 4.5,
+    "images": [
+      "https://images.unsplash.com/photo-1541592106381-b31e9677c0e5?w=600&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1513104890138-7c749659a591?w=600&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=600&auto=format&fit=crop&q=80"
+    ],
+    "spicyLevel": 0,
+    "isVeg": false,
+    "isFeatured": false,
+    "calories": 1000,
+    "ingredients": [
+      "Pizza Dough",
+      "Tomato Sauce",
+      "Mozzarella",
+      "Herb Blend"
+    ]
+  },
+  {
+    "id": "pizza-11",
+    "name": "Sunshine Margherita",
+    "category": "Pizza",
+    "price": 24.79,
+    "description": "Sunshine Margherita made with bold flamehouse flavor, crafted for lovers of pizza.",
+    "longDescription": "Sunshine Margherita is cooked to order and served hot with fresh ingredients, creating a unique experience from our kitchen to your table.",
+    "rating": 4.6,
+    "images": [
+      "https://images.unsplash.com/photo-1513104890138-7c749659a591?w=600&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=600&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1606755456206-b25206cde27e?w=600&auto=format&fit=crop&q=80"
+    ],
+    "spicyLevel": 0,
+    "isVeg": true,
+    "isFeatured": false,
+    "calories": 1010,
+    "ingredients": [
+      "Pizza Dough",
+      "Tomato Sauce",
+      "Mozzarella",
+      "Herb Blend"
+    ]
+  },
+  {
+    "id": "pizza-12",
+    "name": "Carnivore Supreme Pizza",
+    "category": "Pizza",
+    "price": 25.59,
+    "description": "Carnivore Supreme Pizza made with bold flamehouse flavor, crafted for lovers of pizza.",
+    "longDescription": "Carnivore Supreme Pizza is cooked to order and served hot with fresh ingredients, creating a unique experience from our kitchen to your table.",
+    "rating": 4.7,
+    "images": [
+      "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=600&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1606755456206-b25206cde27e?w=600&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1598679253544-2c97992403ea?w=600&auto=format&fit=crop&q=80"
+    ],
+    "spicyLevel": 0,
+    "isVeg": false,
+    "isFeatured": false,
+    "calories": 1020,
+    "ingredients": [
+      "Pizza Dough",
+      "Tomato Sauce",
+      "Mozzarella",
+      "Herb Blend"
+    ]
+  },
+  {
+    "id": "friedchicken-1",
+    "name": "Nashville Hot Fried Chicken",
+    "category": "Fried Chicken",
+    "price": 13.79,
+    "description": "Nashville Hot Fried Chicken made with bold flamehouse flavor, crafted for lovers of fried chicken.",
+    "longDescription": "Nashville Hot Fried Chicken is cooked to order and served hot with fresh ingredients, creating a unique experience from our kitchen to your table.",
+    "rating": 4.6,
+    "images": [
+      "https://images.unsplash.com/photo-1585325701956-60dd9c8553bc?w=600&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?w=600&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1703077710733-72c46d2fcff3?w=600&auto=format&fit=crop&q=80"
+    ],
+    "spicyLevel": 3,
+    "isVeg": false,
+    "isFeatured": true,
+    "calories": 715,
+    "ingredients": [
+      "Chicken",
+      "Crispy Coating",
+      "House Spice"
+    ]
+  },
+  {
+    "id": "friedchicken-2",
+    "name": "Honey Garlic Fire Wings",
+    "category": "Fried Chicken",
+    "price": 14.59,
+    "description": "Honey Garlic Fire Wings made with bold flamehouse flavor, crafted for lovers of fried chicken.",
+    "longDescription": "Honey Garlic Fire Wings is cooked to order and served hot with fresh ingredients, creating a unique experience from our kitchen to your table.",
+    "rating": 4.7,
+    "images": [
+      "https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?w=600&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1703077710733-72c46d2fcff3?w=600&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1608219994488-cc269412b3e4?w=600&auto=format&fit=crop&q=80"
+    ],
+    "spicyLevel": 3,
+    "isVeg": false,
+    "isFeatured": true,
+    "calories": 730,
+    "ingredients": [
+      "Chicken",
+      "Crispy Coating",
+      "House Spice"
+    ]
+  },
+  {
+    "id": "friedchicken-3",
+    "name": "Crispy Strips Basket",
+    "category": "Fried Chicken",
+    "price": 15.39,
+    "description": "Crispy Strips Basket made with bold flamehouse flavor, crafted for lovers of fried chicken.",
+    "longDescription": "Crispy Strips Basket is cooked to order and served hot with fresh ingredients, creating a unique experience from our kitchen to your table.",
+    "rating": 4.8,
+    "images": [
+      "https://images.unsplash.com/photo-1703077710733-72c46d2fcff3?w=600&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1608219994488-cc269412b3e4?w=600&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1525755662778-989d0524087e?w=600&auto=format&fit=crop&q=80"
+    ],
+    "spicyLevel": 0,
+    "isVeg": false,
+    "isFeatured": true,
+    "calories": 745,
+    "ingredients": [
+      "Chicken",
+      "Crispy Coating",
+      "House Spice"
+    ]
+  },
+  {
+    "id": "friedchicken-4",
+    "name": "Garlic Parmesan Wings",
+    "category": "Fried Chicken",
+    "price": 16.19,
+    "description": "Garlic Parmesan Wings made with bold flamehouse flavor, crafted for lovers of fried chicken.",
+    "longDescription": "Garlic Parmesan Wings is cooked to order and served hot with fresh ingredients, creating a unique experience from our kitchen to your table.",
+    "rating": 4.9,
+    "images": [
+      "https://images.unsplash.com/photo-1608219994488-cc269412b3e4?w=600&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1525755662778-989d0524087e?w=600&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1585325701956-60dd9c8553bc?w=600&auto=format&fit=crop&q=80"
+    ],
+    "spicyLevel": 1,
+    "isVeg": false,
+    "isFeatured": true,
+    "calories": 760,
+    "ingredients": [
+      "Chicken",
+      "Crispy Coating",
+      "House Spice"
+    ]
+  },
+  {
+    "id": "friedchicken-5",
+    "name": "Sweet Chili Drumsticks",
+    "category": "Fried Chicken",
+    "price": 16.99,
+    "description": "Sweet Chili Drumsticks made with bold flamehouse flavor, crafted for lovers of fried chicken.",
+    "longDescription": "Sweet Chili Drumsticks is cooked to order and served hot with fresh ingredients, creating a unique experience from our kitchen to your table.",
+    "rating": 4.5,
+    "images": [
+      "https://images.unsplash.com/photo-1525755662778-989d0524087e?w=600&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1585325701956-60dd9c8553bc?w=600&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?w=600&auto=format&fit=crop&q=80"
+    ],
+    "spicyLevel": 2,
+    "isVeg": false,
+    "isFeatured": false,
+    "calories": 775,
+    "ingredients": [
+      "Chicken",
+      "Crispy Coating",
+      "House Spice"
+    ]
+  },
+  {
+    "id": "friedchicken-6",
+    "name": "Korean BBQ Chicken Bites",
+    "category": "Fried Chicken",
+    "price": 17.79,
+    "description": "Korean BBQ Chicken Bites made with bold flamehouse flavor, crafted for lovers of fried chicken.",
+    "longDescription": "Korean BBQ Chicken Bites is cooked to order and served hot with fresh ingredients, creating a unique experience from our kitchen to your table.",
+    "rating": 4.6,
+    "images": [
+      "https://images.unsplash.com/photo-1585325701956-60dd9c8553bc?w=600&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?w=600&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1703077710733-72c46d2fcff3?w=600&auto=format&fit=crop&q=80"
+    ],
+    "spicyLevel": 2,
+    "isVeg": false,
+    "isFeatured": false,
+    "calories": 790,
+    "ingredients": [
+      "Chicken",
+      "Crispy Coating",
+      "House Spice"
+    ]
+  },
+  {
+    "id": "friedchicken-7",
+    "name": "Cajun Crunch Chicken",
+    "category": "Fried Chicken",
+    "price": 18.59,
+    "description": "Cajun Crunch Chicken made with bold flamehouse flavor, crafted for lovers of fried chicken.",
+    "longDescription": "Cajun Crunch Chicken is cooked to order and served hot with fresh ingredients, creating a unique experience from our kitchen to your table.",
+    "rating": 4.7,
+    "images": [
+      "https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?w=600&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1703077710733-72c46d2fcff3?w=600&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1608219994488-cc269412b3e4?w=600&auto=format&fit=crop&q=80"
+    ],
+    "spicyLevel": 2,
+    "isVeg": false,
+    "isFeatured": false,
+    "calories": 805,
+    "ingredients": [
+      "Chicken",
+      "Crispy Coating",
+      "House Spice"
+    ]
+  },
+  {
+    "id": "friedchicken-8",
+    "name": "Buffalo Ranch Tenders",
+    "category": "Fried Chicken",
+    "price": 19.39,
+    "description": "Buffalo Ranch Tenders made with bold flamehouse flavor, crafted for lovers of fried chicken.",
+    "longDescription": "Buffalo Ranch Tenders is cooked to order and served hot with fresh ingredients, creating a unique experience from our kitchen to your table.",
+    "rating": 4.8,
+    "images": [
+      "https://images.unsplash.com/photo-1703077710733-72c46d2fcff3?w=600&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1608219994488-cc269412b3e4?w=600&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1525755662778-989d0524087e?w=600&auto=format&fit=crop&q=80"
+    ],
+    "spicyLevel": 1,
+    "isVeg": false,
+    "isFeatured": false,
+    "calories": 820,
+    "ingredients": [
+      "Chicken",
+      "Crispy Coating",
+      "House Spice"
+    ]
+  },
+  {
+    "id": "friedchicken-9",
+    "name": "Lemon Herb Chicken",
+    "category": "Fried Chicken",
+    "price": 20.19,
+    "description": "Lemon Herb Chicken made with bold flamehouse flavor, crafted for lovers of fried chicken.",
+    "longDescription": "Lemon Herb Chicken is cooked to order and served hot with fresh ingredients, creating a unique experience from our kitchen to your table.",
+    "rating": 4.9,
+    "images": [
+      "https://images.unsplash.com/photo-1608219994488-cc269412b3e4?w=600&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1525755662778-989d0524087e?w=600&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1585325701956-60dd9c8553bc?w=600&auto=format&fit=crop&q=80"
+    ],
+    "spicyLevel": 0,
+    "isVeg": false,
+    "isFeatured": false,
+    "calories": 835,
+    "ingredients": [
+      "Chicken",
+      "Crispy Coating",
+      "House Spice"
+    ]
+  },
+  {
+    "id": "friedchicken-10",
+    "name": "Sweet BBQ Chicken Bites",
+    "category": "Fried Chicken",
+    "price": 20.99,
+    "description": "Sweet BBQ Chicken Bites made with bold flamehouse flavor, crafted for lovers of fried chicken.",
+    "longDescription": "Sweet BBQ Chicken Bites is cooked to order and served hot with fresh ingredients, creating a unique experience from our kitchen to your table.",
+    "rating": 4.5,
+    "images": [
+      "https://images.unsplash.com/photo-1525755662778-989d0524087e?w=600&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1585325701956-60dd9c8553bc?w=600&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?w=600&auto=format&fit=crop&q=80"
+    ],
+    "spicyLevel": 2,
+    "isVeg": false,
+    "isFeatured": false,
+    "calories": 850,
+    "ingredients": [
+      "Chicken",
+      "Crispy Coating",
+      "House Spice"
+    ]
+  },
+  {
+    "id": "friedchicken-11",
+    "name": "Teriyaki Crisp Chicken",
+    "category": "Fried Chicken",
+    "price": 21.79,
+    "description": "Teriyaki Crisp Chicken made with bold flamehouse flavor, crafted for lovers of fried chicken.",
+    "longDescription": "Teriyaki Crisp Chicken is cooked to order and served hot with fresh ingredients, creating a unique experience from our kitchen to your table.",
+    "rating": 4.6,
+    "images": [
+      "https://images.unsplash.com/photo-1585325701956-60dd9c8553bc?w=600&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?w=600&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1703077710733-72c46d2fcff3?w=600&auto=format&fit=crop&q=80"
+    ],
+    "spicyLevel": 1,
+    "isVeg": false,
+    "isFeatured": false,
+    "calories": 865,
+    "ingredients": [
+      "Chicken",
+      "Crispy Coating",
+      "House Spice"
+    ]
+  },
+  {
+    "id": "friedchicken-12",
+    "name": "Chili Lemon Wings",
+    "category": "Fried Chicken",
+    "price": 22.59,
+    "description": "Chili Lemon Wings made with bold flamehouse flavor, crafted for lovers of fried chicken.",
+    "longDescription": "Chili Lemon Wings is cooked to order and served hot with fresh ingredients, creating a unique experience from our kitchen to your table.",
+    "rating": 4.7,
+    "images": [
+      "https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?w=600&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1703077710733-72c46d2fcff3?w=600&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1608219994488-cc269412b3e4?w=600&auto=format&fit=crop&q=80"
+    ],
+    "spicyLevel": 2,
+    "isVeg": false,
+    "isFeatured": false,
+    "calories": 880,
+    "ingredients": [
+      "Chicken",
+      "Crispy Coating",
+      "House Spice"
+    ]
+  },
+  {
+    "id": "sides-1",
+    "name": "Cajun Seasoned Waffle Fries",
+    "category": "Sides",
+    "price": 7.79,
+    "description": "Cajun Seasoned Waffle Fries made with bold flamehouse flavor, crafted for lovers of sides.",
+    "longDescription": "Cajun Seasoned Waffle Fries is cooked to order and served hot with fresh ingredients, creating a unique experience from our kitchen to your table.",
+    "rating": 4.6,
+    "images": [
+      "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?w=600&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1525755662778-989d0524087e?w=600&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1598679253544-2c97992403ea?w=600&auto=format&fit=crop&q=80"
+    ],
+    "spicyLevel": 2,
+    "isVeg": true,
+    "isFeatured": true,
+    "calories": 308,
+    "ingredients": [
+      "Fresh Ingredients",
+      "Seasoning",
+      "House Dip"
+    ]
+  },
+  {
+    "id": "sides-2",
+    "name": "Cheesy Lava Garlic Bread",
+    "category": "Sides",
+    "price": 8.59,
+    "description": "Cheesy Lava Garlic Bread made with bold flamehouse flavor, crafted for lovers of sides.",
+    "longDescription": "Cheesy Lava Garlic Bread is cooked to order and served hot with fresh ingredients, creating a unique experience from our kitchen to your table.",
+    "rating": 4.7,
+    "images": [
+      "https://images.unsplash.com/photo-1525755662778-989d0524087e?w=600&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1598679253544-2c97992403ea?w=600&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1606755456206-b25206cde27e?w=600&auto=format&fit=crop&q=80"
+    ],
+    "spicyLevel": 1,
+    "isVeg": true,
+    "isFeatured": true,
+    "calories": 316,
+    "ingredients": [
+      "Fresh Ingredients",
+      "Seasoning",
+      "House Dip"
+    ]
+  },
+  {
+    "id": "sides-3",
+    "name": "Loaded Chili Cheese Fries",
+    "category": "Sides",
+    "price": 9.39,
+    "description": "Loaded Chili Cheese Fries made with bold flamehouse flavor, crafted for lovers of sides.",
+    "longDescription": "Loaded Chili Cheese Fries is cooked to order and served hot with fresh ingredients, creating a unique experience from our kitchen to your table.",
+    "rating": 4.8,
+    "images": [
+      "https://images.unsplash.com/photo-1598679253544-2c97992403ea?w=600&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1606755456206-b25206cde27e?w=600&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1541592106381-b31e9677c0e5?w=600&auto=format&fit=crop&q=80"
+    ],
+    "spicyLevel": 2,
+    "isVeg": true,
+    "isFeatured": true,
+    "calories": 324,
+    "ingredients": [
+      "Fresh Ingredients",
+      "Seasoning",
+      "House Dip"
+    ]
+  },
+  {
+    "id": "sides-4",
+    "name": "Truffle Parmesan Fries",
+    "category": "Sides",
+    "price": 10.19,
+    "description": "Truffle Parmesan Fries made with bold flamehouse flavor, crafted for lovers of sides.",
+    "longDescription": "Truffle Parmesan Fries is cooked to order and served hot with fresh ingredients, creating a unique experience from our kitchen to your table.",
+    "rating": 4.9,
+    "images": [
+      "https://images.unsplash.com/photo-1606755456206-b25206cde27e?w=600&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1541592106381-b31e9677c0e5?w=600&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?w=600&auto=format&fit=crop&q=80"
+    ],
+    "spicyLevel": 0,
+    "isVeg": true,
+    "isFeatured": true,
+    "calories": 332,
+    "ingredients": [
+      "Fresh Ingredients",
+      "Seasoning",
+      "House Dip"
+    ]
+  },
+  {
+    "id": "sides-5",
+    "name": "Sweet Potato Wedges",
+    "category": "Sides",
+    "price": 10.99,
+    "description": "Sweet Potato Wedges made with bold flamehouse flavor, crafted for lovers of sides.",
+    "longDescription": "Sweet Potato Wedges is cooked to order and served hot with fresh ingredients, creating a unique experience from our kitchen to your table.",
+    "rating": 4.5,
+    "images": [
+      "https://images.unsplash.com/photo-1541592106381-b31e9677c0e5?w=600&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?w=600&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1525755662778-989d0524087e?w=600&auto=format&fit=crop&q=80"
+    ],
+    "spicyLevel": 0,
+    "isVeg": true,
+    "isFeatured": false,
+    "calories": 340,
+    "ingredients": [
+      "Fresh Ingredients",
+      "Seasoning",
+      "House Dip"
+    ]
+  },
+  {
+    "id": "sides-6",
+    "name": "Loaded Nacho Chips",
+    "category": "Sides",
+    "price": 11.79,
+    "description": "Loaded Nacho Chips made with bold flamehouse flavor, crafted for lovers of sides.",
+    "longDescription": "Loaded Nacho Chips is cooked to order and served hot with fresh ingredients, creating a unique experience from our kitchen to your table.",
+    "rating": 4.6,
+    "images": [
+      "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?w=600&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1525755662778-989d0524087e?w=600&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1598679253544-2c97992403ea?w=600&auto=format&fit=crop&q=80"
+    ],
+    "spicyLevel": 0,
+    "isVeg": true,
+    "isFeatured": false,
+    "calories": 348,
+    "ingredients": [
+      "Fresh Ingredients",
+      "Seasoning",
+      "House Dip"
+    ]
+  },
+  {
+    "id": "sides-7",
+    "name": "Onion Ring Tower",
+    "category": "Sides",
+    "price": 12.59,
+    "description": "Onion Ring Tower made with bold flamehouse flavor, crafted for lovers of sides.",
+    "longDescription": "Onion Ring Tower is cooked to order and served hot with fresh ingredients, creating a unique experience from our kitchen to your table.",
+    "rating": 4.7,
+    "images": [
+      "https://images.unsplash.com/photo-1525755662778-989d0524087e?w=600&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1598679253544-2c97992403ea?w=600&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1606755456206-b25206cde27e?w=600&auto=format&fit=crop&q=80"
+    ],
+    "spicyLevel": 0,
+    "isVeg": true,
+    "isFeatured": false,
+    "calories": 356,
+    "ingredients": [
+      "Fresh Ingredients",
+      "Seasoning",
+      "House Dip"
+    ]
+  },
+  {
+    "id": "sides-8",
+    "name": "Mac & Cheese Bites",
+    "category": "Sides",
+    "price": 13.39,
+    "description": "Mac & Cheese Bites made with bold flamehouse flavor, crafted for lovers of sides.",
+    "longDescription": "Mac & Cheese Bites is cooked to order and served hot with fresh ingredients, creating a unique experience from our kitchen to your table.",
+    "rating": 4.8,
+    "images": [
+      "https://images.unsplash.com/photo-1598679253544-2c97992403ea?w=600&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1606755456206-b25206cde27e?w=600&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1541592106381-b31e9677c0e5?w=600&auto=format&fit=crop&q=80"
+    ],
+    "spicyLevel": 0,
+    "isVeg": true,
+    "isFeatured": false,
+    "calories": 364,
+    "ingredients": [
+      "Fresh Ingredients",
+      "Seasoning",
+      "House Dip"
+    ]
+  },
+  {
+    "id": "sides-9",
+    "name": "Spicy Corn Nuggets",
+    "category": "Sides",
+    "price": 14.19,
+    "description": "Spicy Corn Nuggets made with bold flamehouse flavor, crafted for lovers of sides.",
+    "longDescription": "Spicy Corn Nuggets is cooked to order and served hot with fresh ingredients, creating a unique experience from our kitchen to your table.",
+    "rating": 4.9,
+    "images": [
+      "https://images.unsplash.com/photo-1606755456206-b25206cde27e?w=600&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1541592106381-b31e9677c0e5?w=600&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?w=600&auto=format&fit=crop&q=80"
+    ],
+    "spicyLevel": 2,
+    "isVeg": true,
+    "isFeatured": false,
+    "calories": 372,
+    "ingredients": [
+      "Fresh Ingredients",
+      "Seasoning",
+      "House Dip"
+    ]
+  },
+  {
+    "id": "sides-10",
+    "name": "Creamy Coleslaw",
+    "category": "Sides",
+    "price": 14.99,
+    "description": "Creamy Coleslaw made with bold flamehouse flavor, crafted for lovers of sides.",
+    "longDescription": "Creamy Coleslaw is cooked to order and served hot with fresh ingredients, creating a unique experience from our kitchen to your table.",
+    "rating": 4.5,
+    "images": [
+      "https://images.unsplash.com/photo-1541592106381-b31e9677c0e5?w=600&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?w=600&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1525755662778-989d0524087e?w=600&auto=format&fit=crop&q=80"
+    ],
+    "spicyLevel": 0,
+    "isVeg": true,
+    "isFeatured": false,
+    "calories": 380,
+    "ingredients": [
+      "Fresh Ingredients",
+      "Seasoning",
+      "House Dip"
+    ]
+  },
+  {
+    "id": "sides-11",
+    "name": "Cheddar Stuffed Mushrooms",
+    "category": "Sides",
+    "price": 15.79,
+    "description": "Cheddar Stuffed Mushrooms made with bold flamehouse flavor, crafted for lovers of sides.",
+    "longDescription": "Cheddar Stuffed Mushrooms is cooked to order and served hot with fresh ingredients, creating a unique experience from our kitchen to your table.",
+    "rating": 4.6,
+    "images": [
+      "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?w=600&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1525755662778-989d0524087e?w=600&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1598679253544-2c97992403ea?w=600&auto=format&fit=crop&q=80"
+    ],
+    "spicyLevel": 0,
+    "isVeg": true,
+    "isFeatured": false,
+    "calories": 388,
+    "ingredients": [
+      "Fresh Ingredients",
+      "Seasoning",
+      "House Dip"
+    ]
+  },
+  {
+    "id": "sides-12",
+    "name": "Spicy Jalapeño Poppers",
+    "category": "Sides",
+    "price": 16.59,
+    "description": "Spicy Jalapeño Poppers made with bold flamehouse flavor, crafted for lovers of sides.",
+    "longDescription": "Spicy Jalapeño Poppers is cooked to order and served hot with fresh ingredients, creating a unique experience from our kitchen to your table.",
+    "rating": 4.7,
+    "images": [
+      "https://images.unsplash.com/photo-1525755662778-989d0524087e?w=600&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1598679253544-2c97992403ea?w=600&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1606755456206-b25206cde27e?w=600&auto=format&fit=crop&q=80"
+    ],
+    "spicyLevel": 2,
+    "isVeg": true,
+    "isFeatured": false,
+    "calories": 396,
+    "ingredients": [
+      "Fresh Ingredients",
+      "Seasoning",
+      "House Dip"
+    ]
+  },
+  {
+    "id": "drinks-1",
+    "name": "Blazing Mango Mocktail",
+    "category": "Drinks",
+    "price": 6.79,
+    "description": "Blazing Mango Mocktail made with bold flamehouse flavor, crafted for lovers of drinks.",
+    "longDescription": "Blazing Mango Mocktail is cooked to order and served hot with fresh ingredients, creating a unique experience from our kitchen to your table.",
+    "rating": 4.6,
+    "images": [
+      "https://images.unsplash.com/photo-1541592106381-b31e9677c0e5?w=600&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1619535860434-ba1d8fa12536?w=600&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1608219994488-cc269412b3e4?w=600&auto=format&fit=crop&q=80"
+    ],
+    "spicyLevel": 0,
+    "isVeg": true,
+    "isFeatured": true,
+    "calories": 155,
+    "ingredients": [
+      "Fresh Fruit",
+      "Ice",
+      "Sweetener"
+    ]
+  },
+  {
+    "id": "drinks-2",
+    "name": "Caramel Lava Frappe",
+    "category": "Drinks",
+    "price": 7.59,
+    "description": "Caramel Lava Frappe made with bold flamehouse flavor, crafted for lovers of drinks.",
+    "longDescription": "Caramel Lava Frappe is cooked to order and served hot with fresh ingredients, creating a unique experience from our kitchen to your table.",
+    "rating": 4.7,
+    "images": [
+      "https://images.unsplash.com/photo-1619535860434-ba1d8fa12536?w=600&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1608219994488-cc269412b3e4?w=600&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1525755662778-989d0524087e?w=600&auto=format&fit=crop&q=80"
+    ],
+    "spicyLevel": 0,
+    "isVeg": true,
+    "isFeatured": true,
+    "calories": 160,
+    "ingredients": [
+      "Fresh Fruit",
+      "Ice",
+      "Sweetener"
+    ]
+  },
+  {
+    "id": "drinks-3",
+    "name": "Sparkling Berry Cooler",
+    "category": "Drinks",
+    "price": 8.39,
+    "description": "Sparkling Berry Cooler made with bold flamehouse flavor, crafted for lovers of drinks.",
+    "longDescription": "Sparkling Berry Cooler is cooked to order and served hot with fresh ingredients, creating a unique experience from our kitchen to your table.",
+    "rating": 4.8,
+    "images": [
+      "https://images.unsplash.com/photo-1608219994488-cc269412b3e4?w=600&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1525755662778-989d0524087e?w=600&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?w=600&auto=format&fit=crop&q=80"
+    ],
+    "spicyLevel": 0,
+    "isVeg": true,
+    "isFeatured": true,
+    "calories": 165,
+    "ingredients": [
+      "Fresh Fruit",
+      "Ice",
+      "Sweetener"
+    ]
+  },
+  {
+    "id": "drinks-4",
+    "name": "Iced Hibiscus Tea",
+    "category": "Drinks",
+    "price": 9.19,
+    "description": "Iced Hibiscus Tea made with bold flamehouse flavor, crafted for lovers of drinks.",
+    "longDescription": "Iced Hibiscus Tea is cooked to order and served hot with fresh ingredients, creating a unique experience from our kitchen to your table.",
+    "rating": 4.9,
+    "images": [
+      "https://images.unsplash.com/photo-1525755662778-989d0524087e?w=600&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?w=600&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1541592106381-b31e9677c0e5?w=600&auto=format&fit=crop&q=80"
+    ],
+    "spicyLevel": 0,
+    "isVeg": true,
+    "isFeatured": true,
+    "calories": 170,
+    "ingredients": [
+      "Fresh Fruit",
+      "Ice",
+      "Sweetener"
+    ]
+  },
+  {
+    "id": "drinks-5",
+    "name": "Ginger Lime Refresher",
+    "category": "Drinks",
+    "price": 9.99,
+    "description": "Ginger Lime Refresher made with bold flamehouse flavor, crafted for lovers of drinks.",
+    "longDescription": "Ginger Lime Refresher is cooked to order and served hot with fresh ingredients, creating a unique experience from our kitchen to your table.",
+    "rating": 4.5,
+    "images": [
+      "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?w=600&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1541592106381-b31e9677c0e5?w=600&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1619535860434-ba1d8fa12536?w=600&auto=format&fit=crop&q=80"
+    ],
+    "spicyLevel": 1,
+    "isVeg": true,
+    "isFeatured": false,
+    "calories": 175,
+    "ingredients": [
+      "Fresh Fruit",
+      "Ice",
+      "Sweetener"
+    ]
+  },
+  {
+    "id": "drinks-6",
+    "name": "Chocolate Espresso Shake",
+    "category": "Drinks",
+    "price": 10.79,
+    "description": "Chocolate Espresso Shake made with bold flamehouse flavor, crafted for lovers of drinks.",
+    "longDescription": "Chocolate Espresso Shake is cooked to order and served hot with fresh ingredients, creating a unique experience from our kitchen to your table.",
+    "rating": 4.6,
+    "images": [
+      "https://images.unsplash.com/photo-1541592106381-b31e9677c0e5?w=600&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1619535860434-ba1d8fa12536?w=600&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1608219994488-cc269412b3e4?w=600&auto=format&fit=crop&q=80"
+    ],
+    "spicyLevel": 0,
+    "isVeg": true,
+    "isFeatured": false,
+    "calories": 180,
+    "ingredients": [
+      "Fresh Fruit",
+      "Ice",
+      "Sweetener"
+    ]
+  },
+  {
+    "id": "drinks-7",
+    "name": "Piña Colada Freeze",
+    "category": "Drinks",
+    "price": 11.59,
+    "description": "Piña Colada Freeze made with bold flamehouse flavor, crafted for lovers of drinks.",
+    "longDescription": "Piña Colada Freeze is cooked to order and served hot with fresh ingredients, creating a unique experience from our kitchen to your table.",
+    "rating": 4.7,
+    "images": [
+      "https://images.unsplash.com/photo-1619535860434-ba1d8fa12536?w=600&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1608219994488-cc269412b3e4?w=600&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1525755662778-989d0524087e?w=600&auto=format&fit=crop&q=80"
+    ],
+    "spicyLevel": 0,
+    "isVeg": true,
+    "isFeatured": false,
+    "calories": 185,
+    "ingredients": [
+      "Fresh Fruit",
+      "Ice",
+      "Sweetener"
+    ]
+  },
+  {
+    "id": "drinks-8",
+    "name": "Berry Lemonade Smash",
+    "category": "Drinks",
+    "price": 12.39,
+    "description": "Berry Lemonade Smash made with bold flamehouse flavor, crafted for lovers of drinks.",
+    "longDescription": "Berry Lemonade Smash is cooked to order and served hot with fresh ingredients, creating a unique experience from our kitchen to your table.",
+    "rating": 4.8,
+    "images": [
+      "https://images.unsplash.com/photo-1608219994488-cc269412b3e4?w=600&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1525755662778-989d0524087e?w=600&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?w=600&auto=format&fit=crop&q=80"
+    ],
+    "spicyLevel": 0,
+    "isVeg": true,
+    "isFeatured": false,
+    "calories": 190,
+    "ingredients": [
+      "Fresh Fruit",
+      "Ice",
+      "Sweetener"
+    ]
+  }
+];

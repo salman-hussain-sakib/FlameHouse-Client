@@ -15,5 +15,3 @@ test('sign and verify JWT round-trip', () => {
 test('invalid token is rejected', () => {
   assert.equal(verifyJwt('not-a-valid-token'), null);
 });
-
-s
